@@ -9,7 +9,9 @@ public class Main {
         System.out.println(myAccount.getInterest() +" interest.");
         System.out.println("Bank: "+ myAccount.getBank());
 
-
+        myAccount.changeInterest(10);
+        myAccount.addInterest();
+        System.out.println(myAccount.getBalance);
 
 
     }
