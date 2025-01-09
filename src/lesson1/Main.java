@@ -2,12 +2,14 @@ package lesson1;
 
 public class Main {
     public static void main(String[] args){
-        BankAccount myAccount = new BankAccount(45);
-        System.out.println(myAccount.getBalance());
-        myAccount.deposit(155.28);
-        System.out.println(myAccount.getBalance());
-        myAccount.withdraw(6.99);
-        System.out.println(myAccount.getBalance());
+        BankAccount myAccount = new BankAccount(45, "Mister Smith");
+        System.out.println("Balance: "+ myAccount.getBalance());
+        System.out.println("Owner: "+ myAccount.getOwner());
+        System.out.println("Number: "+ myAccount.getNumber());
+        System.out.println(myAccount.getInterest() +" interest.");
+        System.out.println("Bank: "+ myAccount.getBank());
+
+
 
 
     }
