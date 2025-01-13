@@ -7,11 +7,14 @@ public class Main {
         System.out.println("Owner: "+ myAccount.getOwner());
         System.out.println("Number: "+ myAccount.getNumber());
         System.out.println(myAccount.getInterest() +" interest.");
+        myAccount.addBank("Ford");
         System.out.println("Bank: "+ myAccount.getBank());
 
+        myAccount.changeOwner("Nathan");
         myAccount.changeInterest(10);
         myAccount.addInterest();
-        System.out.println(myAccount.getBalance);
+        System.out.println(myAccount.getBalance());
+        System.out.println(myAccount.getOwner());
 
 
     }

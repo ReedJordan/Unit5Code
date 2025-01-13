@@ -62,6 +62,10 @@ public class BankAccount {
         balance = balance / 100;
     }
 
+    public void addBank(String newBank){
+        bank = newBank;
+    }
+
     // getter (accessor):
     public double getBalance(){
         return balance;
