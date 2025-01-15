@@ -21,6 +21,7 @@ public class BankAccount {
     private double interestRate;
     private String bank;
     private String owner;
+    private double drawFee;
 
     //constructors must have the same name as the class
     public BankAccount(){
@@ -41,11 +42,11 @@ public class BankAccount {
 
     // setters / mutators
     public void deposit(double amount){
-        balance += amount;
+        balance = balance + amount - drawFee;
     }
 
     public void withdraw(double taken){
-        balance -= taken;
+        balance = balance - taken - drawFee;
     }
 
     public void changeOwner(String newOwner){
@@ -54,6 +55,10 @@ public class BankAccount {
 
     public void changeInterest(int newInterest){
         interestRate = newInterest;
+    }
+
+    public void changeDrawFee(double newFee){
+        drawFee = newFee;
     }
 
     public void addInterest(){

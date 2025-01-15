@@ -12,9 +12,12 @@ public class Main {
 
         myAccount.changeOwner("Nathan");
         myAccount.changeInterest(10);
+        myAccount.changeDrawFee(9.99);
         myAccount.addInterest();
         System.out.println(myAccount.getBalance());
         System.out.println(myAccount.getOwner());
+        myAccount.deposit(39.99);
+        System.out.println(myAccount.getBalance());
 
 
     }
